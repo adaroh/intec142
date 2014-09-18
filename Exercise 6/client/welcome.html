@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Humus Email - Sign in </title>
+
+    <!-- load the libraries we need -->
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+
+    <!-- load the bootstrap stylesheet and javascript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <!--load css for calendar in age-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
+    <!-- BootstrapValidator CSS -->
+    <link rel="stylesheet" href="css/bootstrapValidator.min.css"/>
+    <!-- BootstrapValidator JS -->
+    <script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+
+    <!-- load our css stylesheet -->
+    <link rel="stylesheet" href="css/welcome.css" />
+    <!-- load our scripts -->
+    <script src="js/welcome.js"></script>
+
+</head>
+<body>
+
+    <!--this class contains two parts - Login & Register-->
+    <div class="container">
+
+        <!--This section deals with the Login-->
+        <div class="row" id="Wrapper-Login">
+            <div class="col-sm-6 col-md-4 col-md-offset-1 col-sm-offset-1">
+                <!--a  welcome title above the box-->
+                <h1 class="text-center login-title">Welcome to Humus Email App</h1>
+                <div class="account-wall">
+                    <img class="profile-img" src="img/loginPhoto.png" alt="">
+
+                    <!--this form hold the username and Password.-->
+                    <form class="form-signin" id="loginForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id='Login-UserName' placeholder="Username" name="usernameLog" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id='Login-Password' placeholder="Password" name="passwordLog">
+                        </div>
+                        <input type="button" class="btn btn-lg btn-success btn-block" id="Login-btn" value="Sign-In"/>
+
+                        <a class="LogBtn text-center new-account">Create an account </a>
+                    </form>
+                </div>
+                <h5 class="text-center">Copyright ©2014 Tal Levi & Adar Ohana</h5>
+            </div>
+        </div>
+
+        <!--This section deals with the register-->
+        <div class="row" id="Wrapper-register">
+            <div class="col-sm-6 col-md-4 col-md-offset-1 col-sm-offset-1">
+                <!--a register title above the box-->
+                <h1 class="text-left login-title">Create your Humus Account</h1>
+
+                <div class="account-wall">
+
+                    <!--this form hold the username, Password, Password Confirmation, First Name, Last Name ans Age.-->
+                    <form class="form-signin" id="registrationForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id='register-UserName' placeholder="User Name" autofocus name="username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id='register-Password' placeholder="Password" name="password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id='register-Password-Con' placeholder="Password Confirmation" name="passwordCon" >
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id='register-FirstName' placeholder="First Name" name="firstname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id='register-LastName' placeholder="Last Name" name="lastname">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group date" id="datetimePicker">
+                                <input type="text" class="form-control" id='register-Age' name="age" placeholder="Birthday" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <button id="reg-btn" class="btn btn-lg btn-success btn-block" type="button">Register!</button>
+
+                        <a class="RegBtn text-center new-account">go back to login </a>
+                    </form>
+                </div>
+                <h5 class="text-center">Copyright ©2014 Tal Levi & Adar Ohana</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
